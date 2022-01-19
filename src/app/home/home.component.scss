@@ -1,0 +1,16 @@
+mat-drawer-container {
+  height: 100%;
+}
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

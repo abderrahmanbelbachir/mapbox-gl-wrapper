@@ -1,0 +1,49 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-toolbar>
+      <span>Map smart</span>
+      <span class="example-spacer"></span>
+
+    </mat-toolbar>
+
+    <div>
+      <mat-list>
+
+        <div mat-subheader>Actions</div>
+
+        <mat-list-item matRipple>
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <div mat-line>Load pins</div>
+        </mat-list-item>
+        <mat-list-item (click)="showAllPins()" matRipple >
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <div mat-line>Auto zoom to show all pins</div>
+        </mat-list-item>
+        <mat-list-item (click)="initView()" matRipple >
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <div mat-line>Back To initial view</div>
+        </mat-list-item>
+
+        <mat-list-item (click)="cancelDragMarker()" matRipple >
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <div mat-line>Cancel move marker</div>
+        </mat-list-item>
+
+        <mat-list-item (click)="resetMap()" matRipple >
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <div mat-line>Reset Map</div>
+        </mat-list-item>
+
+      </mat-list>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <mat-icon>view_headline</mat-icon>
+    </button>
+
+    <div id="map" class="map-container"></div>
+  </div>
+
+</mat-drawer-container>
