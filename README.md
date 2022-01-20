@@ -28,7 +28,7 @@ cd mapsmart
 npm install
 ```
 
-- Service your application : 
+- Serve your application : 
 
 ```
 ng serve
