@@ -11,26 +11,22 @@
 
         <div mat-subheader>Actions</div>
 
-        <mat-list-item matRipple>
-          <mat-icon mat-list-icon>folder</mat-icon>
-          <div mat-line>Load pins</div>
-        </mat-list-item>
         <mat-list-item (click)="showAllPins()" matRipple >
-          <mat-icon mat-list-icon>folder</mat-icon>
+          <mat-icon mat-list-icon>my_location</mat-icon>
           <div mat-line>Auto zoom to show all pins</div>
         </mat-list-item>
         <mat-list-item (click)="initView()" matRipple >
-          <mat-icon mat-list-icon>folder</mat-icon>
+          <mat-icon mat-list-icon>arrow_back</mat-icon>
           <div mat-line>Back To initial view</div>
         </mat-list-item>
 
         <mat-list-item (click)="cancelDragMarker()" matRipple >
-          <mat-icon mat-list-icon>folder</mat-icon>
+          <mat-icon mat-list-icon>cancel</mat-icon>
           <div mat-line>Cancel move marker</div>
         </mat-list-item>
 
         <mat-list-item (click)="resetMap()" matRipple >
-          <mat-icon mat-list-icon>folder</mat-icon>
+          <mat-icon mat-list-icon>refresh</mat-icon>
           <div mat-line>Reset Map</div>
         </mat-list-item>
 
